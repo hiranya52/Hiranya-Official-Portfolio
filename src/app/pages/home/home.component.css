@@ -642,3 +642,43 @@
           font-size: 2.5rem;
       }
   }
+
+
+  .skills {
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.skill span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.bar {
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  border-radius: 10px;
+  animation: fillBar 1.5s ease forwards;
+}
+
+/* Animation reads the --width variable */
+@keyframes fillBar {
+  to {
+    width: var(--width);
+  }
+}

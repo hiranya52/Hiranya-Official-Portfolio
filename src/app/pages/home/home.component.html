@@ -1,4 +1,4 @@
- <div class="animated-bg"></div>
+<div class="animated-bg"></div>
 
     <!-- Navigation -->
     <nav>
@@ -9,170 +9,225 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a routerLink="/contact">Contacts</a></li>
         </ul>
     </nav>
 
-        <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hiranya's Portfolio</h1>
-            <p class="subtitle">Aspiring Software Engineer | Code. Create. Conquer.</p>
-            <button class="explore-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
-                <span>Explore</span>
-            </button>
-        </div>
-        <div class="hero-image">
-            <img src="/img/profile.png" alt="Hiranya">
-        </div>
-    </section>
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Hiranya's Portfolio</h1>
+    <p class="subtitle">Aspiring Software Engineer | Code. Create. Conquer.</p>
+    <button class="explore-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+      <span>Explore</span>
+    </button>
+  </div>
+  <div class="hero-image">
+    <img src="/img/profile.png" alt="Hiranya">
+  </div>
+</section>
 
 
-        <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-cards">
-            <div class="about-card">
-                <div class="card-icon">👤</div>
-                <h3>Who I Am</h3>
-                <p>I'm Hiranya Mendis, 18 years old, currently studying at iCET and following the (ICP) Higher Diploma in Software Engineering. I'm passionate about building real-world applications and growing as a developer.</p>
-            </div>
-            <div class="about-card">
-                <div class="card-icon">💻</div>
-                <h3>What I Do</h3>
-                <p>I specialize in Java programming and GUI development using Java Swing. I've built systems like a Student Management System and a Defense Simulation System. I enjoy problem-solving and UI/UX design.</p>
-            </div>
-            <div class="about-card">
-                <div class="card-icon">🎯</div>
-                <h3>My Goals</h3>
-                <p>My goal is to become a full-stack software engineer capable of building impactful applications from front to back, continuously learning and turning ideas into reality.</p>
-            </div>
-        </div>
-    </section>
-
-
-        <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill" data-width="85%"><span>Java</span><div class="bar"><div class="fill" style="--width: 85%"></div></div></div>
-            <div class="skill" data-width="90%"><span>HTML / CSS</span><div class="bar"><div class="fill" style="--width: 90%"></div></div></div>
-            <div class="skill" data-width="80%"><span>JavaScript</span><div class="bar"><div class="fill" style="--width: 80%"></div></div></div>
-            <div class="skill" data-width="75%"><span>TypeScript</span><div class="bar"><div class="fill" style="--width: 75%"></div></div></div>
-            <div class="skill" data-width="80%"><span>Angular</span><div class="bar"><div class="fill" style="--width: 80%"></div></div></div>
-            <div class="skill" data-width="70%"><span>Spring Boot</span><div class="bar"><div class="fill" style="--width: 70%"></div></div></div>
-            <div class="skill" data-width="75%"><span>JavaFX</span><div class="bar"><div class="fill" style="--width: 75%"></div></div></div>
-            <div class="skill" data-width="85%"><span>Tailwind CSS</span><div class="bar"><div class="fill" style="--width: 85%"></div></div></div>
-            <div class="skill" data-width="80%"><span>Bootstrap</span><div class="bar"><div class="fill" style="--width: 80%"></div></div></div>
-            <div class="skill" data-width="75%"><span>SQL</span><div class="bar"><div class="fill" style="--width: 75%"></div></div></div>
-            <div class="skill" data-width="70%"><span>Figma</span><div class="bar"><div class="fill" style="--width: 70%"></div></div></div>
-            <div class="skill" data-width="90%"><span>VS Code</span><div class="bar"><div class="fill" style="--width: 90%"></div></div></div>
-        </div>
-    </section>
-
-
-        <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-            
-            <div class="project-card">
-                <h3>Guessing Game</h3>
-                <p>Fun number game using HTML, CSS & JS.</p>
-                <a href="#">Read more ➜</a>
-            </div>
-            <div class="project-card">
-                <h3>Guessing Game</h3>
-                <p>Fun number game using HTML, CSS & JS.</p>
-                <a href="#">Read more ➜</a>
-            </div>
-            <div class="project-card">
-                <h3>Student Management System</h3>
-                <p>Java-based system for managing student data.</p>
-                <a href="#">Read more ➜</a>
-            </div>
-            <div class="project-card">
-                <h3>Refresh With Pepsi</h3>
-                <p>Pepsi showcase with smooth JS interactions.</p>
-                <a href="#">Read more ➜</a>
-            </div>
-            <div class="project-card">
-                <h3>World Kindle</h3>
-                <p>Tourism site built with HTML & CSS.</p>
-                <a href="#">Read more ➜</a>
-            </div>
-            <div class="project-card">
-                <h3>Rare Beauty Showcase</h3>
-                <p>Minimalist product layout using pure HTML & CSS.</p>
-                <a href="#">Read more ➜</a>
-            </div>
-        </div>
-    </section>
-
-        <!-- Services Section -->
-    <section id="services" class="services">
-        <h2 class="section-title">My Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">☕</div>
-                <h3>Java Application Development</h3>
-                <p>Scalable desktop apps with Java & Swing. Clean architecture and performance-focused.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🌐</div>
-                <h3>Web Development</h3>
-                <p>Responsive websites using HTML, CSS, JS & Tailwind. Optimized for all devices.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">📊</div>
-                <h3>Data Management</h3>
-                <p>Efficient data handling using arrays, stacks, queues, and linked lists.</p>
-            </div>
-        </div>
-    </section>
-
-
-        <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-about">
-                <h3>Hiranya.Dev</h3>
-                <p>Building modern applications and clean designs with passion and precision.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4>Connect</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-divider"></div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Hiranya.Dev | All Rights Reserved</p>
-        </div>
-    </footer>
-
-    <!-- Enhanced Floating Social Icons with Pop-out Effect -->
-    <div class="floating-social">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="linkedin-icon" data-tooltip="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/yourprofile" target="_blank" class="github-icon" data-tooltip="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
+<!-- About Section -->
+<section id="about" class="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-cards">
+    <div class="about-card">
+      <div class="card-icon"></div>
+      <h3>Who I Am</h3>
+      <p>I'm Hiranya Mendis, 18 years old, currently studying at iCET and following the (ICP) Higher Diploma in Software
+        Engineering. I'm passionate about building real-world applications and growing as a developer.</p>
     </div>
-
-    <!-- Scroll to Top Button -->
-    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        <i class="fas fa-arrow-up"></i>
+    <div class="about-card">
+      <div class="card-icon"></div>
+      <h3>What I Do</h3>
+      <p>I specialize in Java programming and GUI development using Java Swing. I've built systems like a Student
+        Management System and a Defense Simulation System. I enjoy problem-solving and UI/UX design.</p>
     </div>
+    <div class="about-card">
+      <div class="card-icon"></div>
+      <h3>My Goals</h3>
+      <p>My goal is to become a full-stack software engineer capable of building impactful applications from front to
+        back, continuously learning and turning ideas into reality.</p>
+    </div>
+  </div>
+</section>
 
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+  <h2 class="section-title">My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill" data-width="85%"><span>Java</span>
+      <div class="bar">
+        <div class="fill" style="--width: 85%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="90%"><span>HTML / CSS</span>
+      <div class="bar">
+        <div class="fill" style="--width: 90%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="80%"><span>JavaScript</span>
+      <div class="bar">
+        <div class="fill" style="--width: 80%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="75%"><span>TypeScript</span>
+      <div class="bar">
+        <div class="fill" style="--width: 75%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="80%"><span>Angular</span>
+      <div class="bar">
+        <div class="fill" style="--width: 80%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="70%"><span>Spring Boot</span>
+      <div class="bar">
+        <div class="fill" style="--width: 70%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="75%"><span>JavaFX</span>
+      <div class="bar">
+        <div class="fill" style="--width: 75%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="85%"><span>Tailwind CSS</span>
+      <div class="bar">
+        <div class="fill" style="--width: 85%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="80%"><span>Bootstrap</span>
+      <div class="bar">
+        <div class="fill" style="--width: 80%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="75%"><span>SQL</span>
+      <div class="bar">
+        <div class="fill" style="--width: 75%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="70%"><span>Figma</span>
+      <div class="bar">
+        <div class="fill" style="--width: 70%"></div>
+      </div>
+    </div>
+    <div class="skill" data-width="90%"><span>VS Code</span>
+      <div class="bar">
+        <div class="fill" style="--width: 90%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>Guessing Game</h3>
+      <p>Fun number game using HTML, CSS & JS.</p>
+      <a href="#">Read more ➜</a>
+    </div>
+    <div class="project-card">
+      <h3>Guessing Game</h3>
+      <p>Fun number game using HTML, CSS & JS.</p>
+      <a href="#">Read more ➜</a>
+    </div>
+    <div class="project-card">
+      <h3>Student Management System</h3>
+      <p>Java-based system for managing student data.</p>
+      <a href="#">Read more ➜</a>
+    </div>
+    <div class="project-card">
+      <h3>Refresh With Pepsi</h3>
+      <p>Pepsi showcase with smooth JS interactions.</p>
+      <a href="#">Read more ➜</a>
+    </div>
+    <div class="project-card">
+      <h3>World Kindle</h3>
+      <p>Tourism site built with HTML & CSS.</p>
+      <a href="#">Read more ➜</a>
+    </div>
+    <div class="project-card">
+      <h3>Rare Beauty Showcase</h3>
+      <p>Minimalist product layout using pure HTML & CSS.</p>
+      <a href="#">Read more ➜</a>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+  <h2 class="section-title">My Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon"></div>
+      <h3>Java Application Development</h3>
+      <p>Scalable desktop apps with Java & Swing. Clean architecture and performance-focused.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"></div>
+      <h3>Web Development</h3>
+      <p>Responsive websites using HTML, CSS, JS & Tailwind. Optimized for all devices.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"></div>
+      <h3>Data Management</h3>
+      <p>Efficient data handling using arrays, stacks, queues, and linked lists.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3 class = "fSubTit">Hiranya.Dev</h3>
+      <p>Building modern applications and clean designs with passion and precision.</p>
+    </div>
+    <div class="footer-links">
+      <h4 class = "fSubTit">Quick Links</h4>
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4 class = "fSubTit">Connect</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Hiranya.Dev | All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- Enhanced Floating Social Icons with Pop-out Effect -->
+<div class="floating-social">
+  <a href="https://linkedin.com/in/hiranya-mendis" target="_blank" class="linkedin-icon" data-tooltip="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://github.com/hiranya52" target="_blank" class="github-icon" data-tooltip="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="mailto:hiranyamendis52@gmail.com" class="email-icon" data-tooltip="Email">
+    <i class="fas fa-envelope"></i>
+  </a>  
+
+</div>
+
+<!-- Scroll to Top Button -->
+<div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</div>
